@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>HubSpot Forms API Demo</title>
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/242352692.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>HubSpot Forms API Demo</title>
+      
+        <!-- 👇 Disable auto form detection -->
+        <script>
+          window._hsq = window._hsq || [];
+          window.hbspt = window.hbspt || {};
+          window.hbspt.forms = window.hbspt.forms || {};
+          window.hbspt.forms.create = function () {};
+        </script>
+      
+        <!-- 👇 Load tracking script for cookie tracking -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/242352692.js"></script>
+      </head>
 <body>
   <h1>HubSpot Forms API Demo</h1>
   <form id="custom-form">
